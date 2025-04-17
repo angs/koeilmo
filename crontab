@@ -1,0 +1,2 @@
+0 17 * * * /usr/local/bin/python /app/wilma.py >> /var/log/wilma.log
+0 15 * * * /usr/local/bin/python /app/wilmanotify.py >> /var/log/wilma.log

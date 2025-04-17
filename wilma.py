@@ -57,7 +57,7 @@ def login():
     headers = {
         "Origin": WILMA_URL,
         "Referer": LOGIN_URL,
-        "User-Agent": "WilmaKoeIlmo/1.0 (github.com/angs/wilmakoeilmo)"
+        "User-Agent": "KoeIlmo/1.0 (github.com/angs/koeilmo)"
     }
     
     resp = session.post(LOGIN_URL, data=payload, headers=headers)
