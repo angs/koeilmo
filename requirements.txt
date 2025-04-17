@@ -1,0 +1,4 @@
+beautifulsoup4==4.13.3
+psycopg2_binary==2.9.10
+python-telegram-bot==22.0
+Requests==2.32.3

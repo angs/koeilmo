@@ -1,0 +1,16 @@
+{
+    "wilma_url": "",
+    "username": "",
+    "password": "",
+    "exam_ids": [""],
+    "telegram_bot_token": "",
+    "telegram_chat_id": "",
+    "notify_chat_id": "",
+    "database": {
+        "dbname": "",
+        "user": "",
+        "password": "",
+        "host": "localhost",
+        "port": 5432
+    }
+}
