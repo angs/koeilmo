@@ -7,7 +7,7 @@ import locale
 from telegram import Bot
 
 # Load configuration
-with open("config.json") as f:
+with open("/etc/wilmakoeilmo.json") as f:
     config = json.load(f)
 
 locale.setlocale(locale.LC_TIME, "fi_FI.UTF-8")

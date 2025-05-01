@@ -94,13 +94,16 @@ def parse_exam_page(html):
             continue
 
         rows = table.find_all("tr")
-        if len(rows) < 3:
+        if len(rows) < 2:
             continue
         
         date = datetime.datetime.strptime(rows[0].find("strong").text.strip().split(" ")[1], "%d.%m.%Y")
         topic = re.sub(r'\s+', ' ', rows[0].find_all("td")[1].text).strip()
         teacher = rows[1].find("td").text.strip().split("(")[-1].strip(")")
-        additional_info = rows[2].find("td").text.strip()
+        if len(rows) == 3:
+            additional_info = rows[2].find("td").text.strip()
+        else:
+            additional_info = None
 
         exams.append({
             "examdate": date,
